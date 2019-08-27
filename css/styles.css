@@ -62,7 +62,7 @@ body{
 
 	background:#2F3676;
 	height:200px;
-	width:550px;
+	max-width:550px;
 	border-radius:0px 0px 60% 40%;
 	overflow: hidden;
 
@@ -117,7 +117,7 @@ body{
 
 .content-body{
 
-	width:100%;	
+	width:550px;	
 	height:550px;
 	background:#F2F2F2;
 
@@ -154,6 +154,7 @@ body{
   line-height:22px;
 }
 
+
 .c-checkbox span {
   position: relative;
   display: inline-block;
@@ -164,6 +165,11 @@ body{
   border-radius: 2px;
   border: 1px solid #ccc;
   text-align: center;
+}
+
+.c-checkbox span:hover {
+ 
+ 	background: #191847;
 }
 
 .c-checkbox span:before{
@@ -230,6 +236,13 @@ transition: color 0.3s ease-out;
 
 }
 
+.counter button:hover{
+	
+	background: #191847;
+
+}
+
+
 .counter input{
 	
 	width:50px;
@@ -250,17 +263,57 @@ transition: color 0.3s ease-out;
 	padding-top:22px;
 }
 
+
+.form-message{
+
+	width:100%;
+}
+
 .form-message textarea{
 	
 
 	margin-top:10px;
 	width:90%;
-	height:120px;
+	height:92px;
 	background: #DDE3E9;
 	border: 1px solid #2F3676;
 	resize:none;
+	font-family: Inter;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 24px;
+	color: #071723;
+}
+
+.button{
+	
+	width:100%;
+	height:90px;
+	background:#DDE3E9;
+	display:flex;
+	align-items:center;
+	justify-content:flex-end;
+
+}
 
 
+.button input{
+	
+	height: 37px;
+	width: 133px;
+	display:flex;
+	margin-right:20px;
+	background: #2F3676;
+	border-radius: 7px;
+	font-family: Inter;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 22px;
+	color: #FFFFFF;
+	justify-content: center;
+	cursor:pointer;
 
 }
 

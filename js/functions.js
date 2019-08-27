@@ -15,7 +15,6 @@ function addSticker(){
 
     valor++;
 
-
     inputValue.value = valor
 
 }
@@ -31,9 +30,9 @@ function removeSticker(){
 
     inputValue.value = valor;
 
-	}
+  	}
 
-}
+}	
 
 
 
