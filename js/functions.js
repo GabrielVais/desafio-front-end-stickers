@@ -1,11 +1,14 @@
 
-var inputValue = document.querySelector("#sticker");
+const inputValue = document.querySelector("#sticker");
 
 var valor = 0;
 
-var btnLess = document.querySelector("#btnLess");
+const btnLess = document.querySelector("#btnLess");
 
-var btnAdd = document.querySelector("#btnAdd");
+const btnAdd = document.querySelector("#btnAdd");
+
+const btnSubmit = document.querySelector("#submit");
+
 
 
 
@@ -34,6 +37,10 @@ function removeSticker(){
 
 }	
 
+function sleep(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
+
 
 
 btnLess.addEventListener("click", function(){
@@ -48,3 +55,18 @@ btnAdd.addEventListener("click", function(){
 	addSticker();
 
 })
+
+btnSubmit.addEventListener("click", async function(event){
+
+	event.preventDefault();
+
+	let spanMessage = document.querySelector("#success");
+
+	spanMessage.style.display = "block";
+
+	await sleep(2000);
+
+	spanMessage.style.display = "none";
+
+
+});
